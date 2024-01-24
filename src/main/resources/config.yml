@@ -1,18 +1,22 @@
-name: DoggyRelics
-version: 1.0.0
-description: Your plugin description here
-main: com.doggyrelics.DoggyRelics
-api-version: 1.19
-authors: [Dogfall]
-website: https://yourpluginwebsite.com
-depend: []
-
-commands:
-  relics:
-    description: Description of your command
-    usage: /relics
-    permission: relics.command.permission
-
-permissions:
-  relics.command.permission:
-    description: Permission to use /relics  # Corrected the command name
+# config.yml
+relics:
+  common:
+    reward-chance: 0.5
+    rewards:
+      - 'common_reward1'
+      - 'common_reward2'
+  rare:
+    reward-chance: 0.3
+    rewards:
+      - 'rare_reward1'
+      - 'rare_reward2'
+  epic:
+    reward-chance: 0.2
+    rewards:
+      - 'epic_reward1'
+      - 'epic_reward2'
+  legendary:
+    reward-chance: 0.1
+    rewards:
+      - 'legendary_reward1'
+      - 'legendary_reward2'
