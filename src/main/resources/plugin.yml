@@ -1,7 +1,18 @@
-name: ${project.artifactId}
-main: ${project.groupId}.${artifactId.lowercase}.${project.artifactId}
-author: OnyxianSoul
-version: ${project.version}
-api-version: 1.13
-description: ${description}
-website: ${project.url}
+name: DoggyRelics
+version: 1.0.0
+description: Your plugin description here
+main: com.doggyrelics.DoggyRelics
+api-version: 1.19
+authors: [Dogfall]
+website: https://yourpluginwebsite.com
+depend: []
+
+commands:
+  relics:
+    description: Description of your command
+    usage: /relics
+    permission: relics.command.permission
+
+permissions:
+  relics.command.permission:
+    description: Permission to use /relics  # Corrected the command name
